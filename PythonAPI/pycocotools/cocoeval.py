@@ -479,7 +479,7 @@ class COCOeval:
             stats[4] = _summarize(1, maxDets=20, areaRng='large')
             stats[5] = _summarize(1, maxDets=20, areaRng='large', iouThr=.5)
             stats[6] = _summarize(1, maxDets=20, areaRng='large', iouThr=.75)
-            stats[7] = _summarize(1, maxDets=20, areaRng='large', iouThr=.9)
+            stats[7] = _summarize(1, maxDets=20, areaRng='large', iouThr=.95)
             stats[8] = _summarize(0, maxDets=20)
             stats[9] = _summarize(0, maxDets=20, iouThr=.5)
             stats[10] = _summarize(0, maxDets=20, iouThr=.75)
@@ -487,7 +487,7 @@ class COCOeval:
             stats[12] = _summarize(0, maxDets=20, areaRng='large')
             stats[13] = _summarize(0, maxDets=20, areaRng='large', iouThr=.5)
             stats[14] = _summarize(0, maxDets=20, areaRng='large', iouThr=.75)
-            stats[15] = _summarize(0, maxDets=20, areaRng='large', iouThr=.9)
+            stats[15] = _summarize(0, maxDets=20, areaRng='large', iouThr=.95)
             return stats
         if not self.eval:
             raise Exception('Please run accumulate() first')
